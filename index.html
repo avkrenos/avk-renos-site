@@ -181,19 +181,19 @@
 <section id="home" class="home">
     <h2>Welcome to AVK Reno’s</h2>
     <p>Your trusted partner for all your renovation needs. From painting to carpentry, we transform your spaces with expert craftsmanship and care.</p>
-    
+    </div>
     <div class="reviews">
         <h2>Client Reviews</h2>
         <div class="review">
-            <h3>Steve</h3>
+            <h3>John Doe</h3>
             <p>"AVK Reno’s transformed my living room beautifully. Highly recommend!"</p>
         </div>
         <div class="review">
-            <h3>Linda</h3>
+            <h3>Jane Smith</h3>
             <p>"Professional and efficient service. My deck looks amazing now!"</p>
         </div>
         <div class="review">
-            <h3>Mark</h3>
+            <h3>Mark Wilson</h3>
             <p>"Top-notch quality and attention to detail. Thank you, AVK Reno’s!"</p>
         </div>
     </div>
@@ -233,37 +233,28 @@
 
 <section id="enquiry">
     <h2> Get a Quote </h2>
-    <div class="form-container">
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <div class="form-container">    
+        <form action="https://formspree.io/f/mwplpkko" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="Enter your address" required>
 
-            <label for="services">Services Required:</label>
-            <select id="services" name="services[]" multiple required>
-                <option value="painting">Interior & Exterior Painting</option>
-                <option value="drywall">Drywall</option>
-                <option value="deck">Deck</option>
-                <option value="power_washing">Power Washing</option>
-                <option value="carpentry">Carpentry</option>
-            </select>
+    <label for="services">Services Required:</label>
+    <select id="services" name="services[]" multiple required>
+        <option value="painting">Interior & Exterior Painting</option>
+        <option value="drywall">Drywall</option>
+        <option value="deck">Deck</option>
+        <option value="power_washing">Power Washing</option>
+        <option value="carpentry">Carpentry</option>
+    </select>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
 
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2025 AVK Reno’s. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+    <button type="submit">Submit</button>
+</form>
