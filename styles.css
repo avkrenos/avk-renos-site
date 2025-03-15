@@ -4,8 +4,8 @@ body {
     line-height: 1.8;
     margin: 0;
     padding: 0;
-    background: linear-gradient(180deg, rgb(255, 252, 235), #1c1c1c);
-    color: #2b2b2b;
+    background-color:rgb(255, 252, 235);
+    color: #white;
     text-align: center;
 }
 
@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: outside-shape;
 }
 
 /* Header and Navigation */
@@ -34,15 +34,14 @@ nav {
     padding: 1em;
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 1em;
     border-bottom: 2px solid #4b4b4b;
 }
 
 nav a {
     color: #fff;
     font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.1em;
+    font-size: 1.0em;
 }
 
 nav a:hover {
@@ -67,6 +66,7 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     margin: 2em;
+    color: white;
 }
 
 .photo-gallery {
@@ -105,7 +105,7 @@ nav a:hover {
 }
 
 .service h3 {
-    color: #4b4b4b;
+    color: #black;
 }
 
 /* Contact Section */
