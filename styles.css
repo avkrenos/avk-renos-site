@@ -1,17 +1,17 @@
 /* General Styles */
 body {
-    font-family: "Times New Roman",serif;
+    font-family: "Times New Roman", Times, serif;
     line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #rgb(255, 252, 235);
-    color: #black;
+    background: linear-gradient(180deg, rgb(255, 252, 235), #1c1c1c);
+    color: #2b2b2b;
     text-align: center;
 }
 
 h1, h2, h3 {
     margin: 0.5em 0;
-    color: #d4af37;
+    color: #4b4b4b;
 }
 
 p {
@@ -19,7 +19,7 @@ p {
 }
 
 a {
-    color: #d4af37;
+    color: #4b4b4b;
     text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 2em;
-    border-bottom: 2px solid #d4af37;
+    border-bottom: 2px solid #4b4b4b;
 }
 
 nav a {
@@ -46,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #d4af37;
+    color: #4b4b4b;
 }
 
 /* Logo */
@@ -63,7 +63,7 @@ nav a:hover {
 /* Home Section */
 .home {
     padding: 2em;
-    background-color: #2b2b2b;
+    background-color: rgba(255, 252, 235, 0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     margin: 2em;
@@ -94,7 +94,7 @@ nav a:hover {
 
 .service {
     padding: 1.5em;
-    background-color: #2b2b2b;
+    background-color: rgba(255, 252, 235, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
@@ -105,13 +105,13 @@ nav a:hover {
 }
 
 .service h3 {
-    color: #d4af37;
+    color: #4b4b4b;
 }
 
 /* Contact Section */
 #contact {
     padding: 2em;
-    background-color: #2b2b2b;
+    background-color: rgba(255, 252, 235, 0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     margin: 2em;
@@ -135,7 +135,7 @@ form label {
     display: block;
     margin-bottom: 0.5em;
     font-weight: bold;
-    color: #f5f5f5;
+    color: #2b2b2b;
 }
 
 form input, form textarea, form select, form button {
@@ -150,26 +150,26 @@ form input, form textarea, form select, form button {
 }
 
 form input:focus, form textarea:focus, form select:focus {
-    border-color: #d4af37;
+    border-color: #4b4b4b;
     outline: none;
 }
 
 form button {
-    background-color: #d4af37;
-    color: #1c1c1c;
+    background-color: #4b4b4b;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
     border: none;
 }
 
 form button:hover {
-    background-color: #b89431;
+    background-color: #333;
 }
 
 .thank-you {
     display: none;
     padding: 2em;
-    background-color: #2b2b2b;
+    background-color: rgba(255, 252, 235, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -178,13 +178,13 @@ form button:hover {
 footer {
     padding: 1em;
     background-color: #2b2b2b;
-    color: #d4af37;
+    color: #4b4b4b;
     margin-top: 2em;
-    border-top: 2px solid #d4af37;
+    border-top: 2px solid #4b4b4b;
 }
 
 footer a {
-    color: #d4af37;
+    color: #4b4b4b;
 }
 
 @media (max-width: 768px) {
