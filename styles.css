@@ -1,6 +1,7 @@
-/* General Styles */
+  <style>
+   /* General Styles */
 body {
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Times New Roman", serif;
     line-height: 1.8;
     margin: 0;
     padding: 0;
@@ -31,10 +32,10 @@ a:hover {
 nav {
     background-color: #2b2b2b;
     color: #fff;
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 4em;
     border-bottom: 2px solid #4b4b4b;
 }
 
@@ -50,12 +51,12 @@ nav a:hover {
 
 /* Logo */
 .logo {
-    margin: 1em 0;
+    text-align:center;
+    margin-top:20px;
 }
 
 .logo img {
     max-width: 200px;
-    height: auto;
 }
 
 /* Home Section */
@@ -86,8 +87,8 @@ nav a:hover {
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2em;
-    padding: 2em;
+    gap: 5em;
+    padding: 4em;
     background-color: #1c1c1c;
 }
 
@@ -134,7 +135,7 @@ form label {
     display: block;
     margin-bottom: 0.5em;
     font-weight: bold;
-    color: #2b2b2b;
+    color: white;
 }
 
 form input, form textarea, form select, form button {
@@ -146,6 +147,7 @@ form input, form textarea, form select, form button {
     background-color: #2b2b2b;
     color: #f5f5f5;
     box-sizing: border-box;
+ 
 }
 
 form input:focus, form textarea:focus, form select:focus {
@@ -177,13 +179,13 @@ form button:hover {
 footer {
     padding: 1em;
     background-color: #2b2b2b;
-    color: #4b4b4b;
+    color: white;
     margin-top: 2em;
     border-top: 2px solid #4b4b4b;
 }
 
 footer a {
-    color: #4b4b4b;
+    color:white;
 }
 
 @media (max-width: 768px) {
@@ -195,3 +197,4 @@ footer a {
         flex-direction: column;
     }
 }
+    </style>
