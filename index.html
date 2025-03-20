@@ -11,7 +11,7 @@
     <style>
         body {
             background: linear-gradient(to bottom, rgb(255, 252, 235), #2b2b2b);
-            font-family: Times, serif;
+            font-family: garamond, serif;
             margin: 0;
             padding: 0;
             color: #2b2b2b;
@@ -19,14 +19,15 @@
         }
 
         header {
+            display: flex;
+            justify-content: center;
             padding: 1em;
+            background-color;
             border-bottom: 2px solid #d4af37;
         }
 
         header img {
-            display: block;
-            margin: 0 auto;
-            max-width: 150px;
+            max-height: 80px;
         }
 
         nav {
@@ -36,12 +37,10 @@
             background-color: #2b2b2b;
             color: #fff;
             padding: 1em;
-            border-bottom: 2px solid #d4af37;
         }
 
         .dropdown {
             position: relative;
-            margin-left: auto;
         }
 
         .dropbtn {
@@ -124,6 +123,11 @@
 
             .dropdown {
                 margin-left: 0;
+            }
+
+            header img {
+                max-width: 100%;
+                height: auto;
             }
         }
     </style>
