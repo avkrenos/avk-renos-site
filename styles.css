@@ -8,7 +8,87 @@ body {
     background-color:rgb(255, 252, 235);
     color: black;
     text-align: center;
-}
+
+        header {
+            padding: 1em;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        header img {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2b2b2b;
+            color: #fff;
+            padding: 1em;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        .dropdown {
+            position: relative;
+            margin-left: auto;
+        }
+
+        .dropbtn {
+            background-color: #2b2b2b;
+            color: white;
+            font-size: 16px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropbtn::after {
+            content: '\25BC';
+            margin-left: 8px;
+        }
+
+        .dropbtn:hover {
+            color: #d4af37;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2b2b2b;
+            min-width: 160px;
+            right: 0;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+            color: #d4af37;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #d4af37;
+        }
+
+        section {
+            padding: 2em;
+        }
 
 h1, h2, h3 {
     margin: 0.5em 0;
@@ -196,4 +276,5 @@ footer a {
     .photo-gallery {
         flex-direction: column;
     }
+}
 }
