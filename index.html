@@ -8,24 +8,120 @@
     <meta name="author" content="AVK Renovation's">
     <link rel="stylesheet" href="styles.css">
     <title>AVK Renovation's</title>
-   
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgb(255, 252, 235), #2b2b2b);
+            font-family: Times, serif;
+            margin: 0;
+            padding: 0;
+            color: #2b2b2b;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2b2b2b;
+            color: #fff;
+            padding: 1em;
+            border-bottom: 2px solid #d4af37;
+            position: relative;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropbtn {
+            background-color: #2b2b2b;
+            color: white;
+            font-size: 16px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover {
+            color: #d4af37;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2b2b2b;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+            color: #d4af37;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #d4af37;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #2b2b2b;
+            color: white;
+            padding: 1em;
+            margin-top: 2em;
+        }
+
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-<div class="logo">
-    <img src="Logo.PNG" alt="AVK Reno's Logo">
-</div>
-
 <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact Us</a>
-    <a href="#enquiry">Enquiry</a>
+    <img class="logo" src="logo.png" alt="AVK Renovation's Logo">
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#enquiry">Enquiry</a>
+        </div>
+    </div>
 </nav>
 
 <section id="home" class="home">
-    <h1>Welcome to AVK Reno's</h1>
-    <P>Your trusted partner for all your renovation needs. From painting to carpentry, we transform your spaces with expert craftsmanship and care.</P >
+    <h2>Welcome to AVK Renovation's</h2>
+    <p>Your trusted partner for all your renovation needs. From painting to carpentry, we transform your spaces with expert craftsmanship and care.</p>
     <div class="photo-gallery">
         <img src="image1.JPG" alt="Interior Painting Project" loading="lazy">
         <img src="image2.jpg" alt="Deck Renovation Project" loading="lazy">
@@ -55,6 +151,10 @@
         <div class="service">
             <h3>Carpentry</h3>
             <p>Skilled carpentry for renovations, repairs, and custom projects.</p>
+        </div>
+        <div class="service">
+            <h3>Stucco</h3>
+            <p>Top quality stucco application to enhance the exterior presence. </p>
         </div>
     </div>
 </section>
@@ -100,7 +200,12 @@
 </section>
 
 <footer>
-    <p>&copy; 2024 AVK Reno's. All rights reserved.</p>
+    <p>&copy; 2025 AVK Renovation's. All rights reserved.</p>
+    <p>Follow us on 
+        <a href="#">Facebook</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">Twitter</a>
+    </p>
 </footer>
 
 <script>
