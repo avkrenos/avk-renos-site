@@ -18,26 +18,30 @@
             text-align: center;
         }
 
+        header {
+            padding: 1em;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        header img {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+        }
+
         nav {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             background-color: #2b2b2b;
             color: #fff;
             padding: 1em;
             border-bottom: 2px solid #d4af37;
         }
 
-        .logo {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: 50px;
-        }
-
         .dropdown {
             position: relative;
+            margin-left: auto;
         }
 
         .dropbtn {
@@ -47,6 +51,13 @@
             border: none;
             padding: 10px 20px;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropbtn::after {
+            content: '\25BC';
+            margin-left: 8px;
         }
 
         .dropbtn:hover {
@@ -58,6 +69,7 @@
             position: absolute;
             background-color: #2b2b2b;
             min-width: 160px;
+            right: 0;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
@@ -110,18 +122,19 @@
                 justify-content: center;
             }
 
-            .logo {
-                position: relative;
-                transform: translate(0, 0);
-                margin: 10px 0;
+            .dropdown {
+                margin-left: 0;
             }
         }
     </style>
 </head>
 <body>
 
+<header>
+    <img src="logo.png" alt="AVK Renovation's Logo">
+</header>
+
 <nav>
-    <img class="logo" src="logo.png" alt="AVK Renovation's Logo">
     <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
