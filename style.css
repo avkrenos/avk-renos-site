@@ -1,73 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVK Renos</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="column">
-            <img src="images/cn-tower-vector.png" alt="CN Tower">
-        </div>
-        <div class="column">
-            <h1>AVK Renos</h1>
-        </div>
-    </header>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Navigation Menu -->
-    <nav class="menu">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#book">Book a Consultation</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+}
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Home Section -->
-        <section id="home">
-            <h2>Welcome to AVK Renos</h2>
-            <p>Your trusted renovation partner in transforming spaces.</p>
-            <div class="gallery">
-                <img src="images/renovation1.jpg" alt="Living Room Renovation">
-                <img src="images/renovation2.jpg" alt="Kitchen Renovation">
-                <img src="images/renovation3.jpg" alt="Bathroom Renovation">
-            </div>
-        </section>
+header .column {
+    flex: 1;
+    text-align: center;
+}
 
-        <!-- About Us Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>AVK Renos is dedicated to providing exceptional renovation services tailored to your needs.</p>
-        </section>
+header img {
+    width: 50px; /* Adjust CN Tower vector art size */
+    height: auto;
+}
 
-        <!-- Portfolio Section -->
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Explore our past renovation projects to see the quality and craftsmanship we deliver.</p>
-        </section>
+header h1 {
+    font-size: 24px;
+    text-align: center;
+}
 
-        <!-- Book a Consultation Section -->
-        <section id="book">
-            <h2>Book a Consultation</h2>
-            <p>Contact us to schedule a consultation and discuss your renovation plans.</p>
-        </section>
+/* Navigation Menu */
+nav.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Background color for the menu */
+    padding: 10px 0;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+}
 
-        <!-- Contact Us Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: info@avkrenos.com</p>
-            <p>Phone: +1 (555) 123-4567</p>
-        </section>
-    </div>
+nav.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-    <!-- Footer Section -->
-    <footer>
-        &copy; 2025 AVK Renos. All rights reserved.
-    </footer>
-</body>
-</html>
+nav.menu a:hover {
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav.menu {
+        flex-wrap: wrap; /* Allows menu items to wrap on smaller screens */
+    }
+
+    nav.menu a {
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav.menu a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
