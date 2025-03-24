@@ -1,3 +1,4 @@
+/* General Reset */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -15,6 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
 
 header .column {
@@ -32,6 +34,7 @@ header .column:last-child {
 
 header img {
     height: 50px;
+    max-width: 100%;
 }
 
 header .menu-symbol {
@@ -39,15 +42,15 @@ header .menu-symbol {
     cursor: pointer;
 }
 
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
 footer {
     text-align: center;
     padding: 10px;
     font-size: 14px;
-}
-
-.main-content {
-    padding: 20px;
-    text-align: center;
 }
 
 a {
@@ -59,6 +62,29 @@ a:hover {
     text-decoration: underline;
 }
 
-nav a {
-    margin: 0 10px;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements */
+        align-items: center;
+    }
+
+    header .column {
+        text-align: center;
+        flex: 100%; /* Full width */
+    }
+
+    .menu-symbol {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header img {
+        height: 40px; /* Reduce logo size for smaller screens */
+    }
+
+    footer {
+        font-size: 12px; /* Smaller footer font size */
+    }
 }
