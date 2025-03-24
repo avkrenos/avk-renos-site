@@ -2,108 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AVK Renos</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<div class="logo">
-    <img src="logo.png" alt="AVK Reno's Logo">
-</div>
-
-<nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact Us</a>
-    <a href="#enquiry">Enquiry</a>
-</nav>
-
-<section id="home" class="home">
-    <h2>Welcome to AVK Reno’s</h2>
-    <p>Your trusted partner for all your renovation needs. From painting to carpentry, we transform your spaces with expert craftsmanship and care.</p>
-    <div class="photo-gallery">
-        <img src="image1.JPG" alt="Project 1">
-        <img src="image2.jpg" alt="Project 2">
-        <img src="image3.jpg" alt="Project 3">
+    <header>
+        <div class="column">
+            <img src="cn-tower-vector.png" alt="CN Tower">
+        </div>
+        <div class="column">
+            <h1>AVK Renos</h1>
+        </div>
+        <div class="column">
+            <div class="menu-symbol">&#9776;</div>
+        </div>
+    </header>
+    <div class="main-content">
+        <h2>Welcome to AVK Renos</h2>
+        <p>Your trusted renovation partner in transforming spaces.</p>
     </div>
-</section>
-
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="service">
-            <h3>Interior & Exterior Painting</h3>
-            <p>Enhance your home with professional painting services tailored to your style.</p>
-        </div>
-        <div class="service">
-            <h3>Drywall</h3>
-            <p>High-quality drywall installation and finishing for a flawless look.</p>
-        </div>
-        <div class="service">
-            <h3>Deck</h3>
-            <p>Custom deck building and repairs to extend your outdoor living space.</p>
-        </div>
-      <div class="service">
-            <h3>Power Washing</h3>
-            <p>Remove dirt and grime with our expert power washing services.</p>
-        </div>
-        <div class="service">
-            <h3>Carpentry</h3>
-            <p>Skilled carpentry for renovations, repairs, and custom projects.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Phone: 647-785-0375</p>
-    <p>Email: <a href="mailto:clients@avkrenos.com">clients@avkrenos.com</a></p>
-</section>
-
-<section id="enquiry">
-    <h2>Get a Quote</h2>
-    <div class="form-container">
-        <form action="https://formspree.io/f/mwplpkko" method="post" onsubmit="showThankYou(event)">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
-
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" placeholder="Enter your address" required>
-
-            <label for="services">Services Required:</label>
-            <select id="services" name="services[]" multiple required>
-                <option value="painting">Interior & Exterior Painting</option>
-                <option value="drywall">Drywall</option>
-                <option value="deck">Deck</option>
-                <option value="power_washing">Power Washing</option>
-                <option value="carpentry">Carpentry</option>
-            </select>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-        <div class="thank-you" id="thank-you">
-            <h2>Thank you for reaching out! We will get back to you shortly!</h2>
-            <p><a href="#home">Return to Home</a></p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2022 AVK Reno's. All rights reserved.</p>
-</footer>
-
-<script>
-    function showThankYou(event) {
-        event.preventDefault();
-        document.querySelector('.form-container form').style.display = 'none';
-        document.querySelector('#thank-you').style.display = 'block';
-    }
-</script>
-
+    <footer>
+        &copy; 2025 AVK Renos. All rights reserved.
+    </footer>
 </body>
 </html>
