@@ -1,11 +1,53 @@
-/* Navigation Menu */
-nav.menu {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav.menu a {
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+header .column {
+    flex: 1; /* Each column takes equal space */
+    text-align: center;
+}
+
+header img {
+    width: 50px; /* Adjust CN Tower vector art size */
+    height: auto;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.menu a {
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -13,20 +55,96 @@ nav.menu a {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-nav.menu a:hover {
+.menu a:hover {
     background-color: #555;
     border-radius: 5px;
     transform: scale(1.1);
 }
 
-/* Smooth Scrolling for Anchor Links */
-html {
-    scroll-behavior: smooth;
+/* Main Content */
+.main-content {
+    padding: 20px;
 }
 
-/* Highlight Active Section in Navigation (Optional) */
-nav.menu a.active {
-    background-color: #444;
-    border-radius: 5px;
-    font-weight: bold;
+/* Image Gallery in Home Section */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+    gap: 15px; /* Space between images */
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image fits perfectly without distortion */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Adjust header for smaller screens */
+    header {
+        flex-direction: column; /* Stacks the columns vertically */
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header img {
+        width: 40px; /* Reduce CN Tower image size for smaller screens */
+    }
+
+    /* Responsive Image Gallery */
+    .gallery img {
+        width: 100%; /* Images take full width on smaller screens */
+        max-width: 300px; /* Prevents images from being too large */
+        height: auto; /* Maintains aspect ratio */
+    }
+
+    /* Adjust font size for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    header h1 {
+        font-size: 18px;
+    }
+
+    .menu {
+        flex-direction: column; /* Stacks menu items vertically */
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .gallery img {
+        max-width: 100%; /* Ensure images fit smaller screens */
+    }
 }
