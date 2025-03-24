@@ -21,8 +21,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #222;
-    color: white;
+    background-color: #f5f5dc; /* Match the header color to background (beige) */
+    color: #333;
 }
 
 header .column {
@@ -31,22 +31,28 @@ header .column {
 }
 
 header img {
-    width: 200px; /* Adjust CN Tower vector art size */
-    height: 200px;
+    width: 250px; /* Adjust CN Tower vector art size */
+    height: auto;
 }
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
 /* Navigation Menu */
 nav.menu {
     display: flex;
     justify-content: center;
-    background-color: #333; /* Background color for the menu */
+    background-color: #f5f5dc; /* Match menu background to body background */
     padding: 10px 0;
     border-top: 2px solid #444;
     border-bottom: 2px solid #444;
 }
 
 nav.menu a {
-    color: black;
-    text-decoration: shadow;
+    color: #333; /* Change text color to dark for better readability */
+    text-decoration: none; /* Remove underline from links */
     margin: 0 15px;
     font-size: 18px;
     font-weight: bold;
@@ -56,7 +62,7 @@ nav.menu a {
 
 nav.menu a:hover {
     background-color: #555;
-    color: #fff;
+    color: white; /* Change text color on hover */
     border-radius: 5px;
 }
 
