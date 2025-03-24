@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | AVK Renos</title>
+    <title>AVK Renos</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="column">
             <img src="images/cn-tower-vector.png" alt="CN Tower">
@@ -15,15 +16,79 @@
             <h1>AVK Renos</h1>
         </div>
         <div class="column">
-            <div class="menu-symbol">&#9776;</div>
+            <nav class="menu">
+                <a href="#home" class="menu-symbol">🏠</a>
+                <a href="#about" class="menu-symbol">📖</a>
+                <a href="#portfolio" class="menu-symbol">🖼️</a>
+                <a href="#book" class="menu-symbol">📅</a>
+                <a href="#contact" class="menu-symbol">📞</a>
+            </nav>
         </div>
     </header>
+
+    <!-- Main Content -->
     <div class="main-content">
-        <h2>Welcome to AVK Renos</h2>
-        <p>Your trusted renovation partner in transforming spaces.</p>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to AVK Renos</h2>
+            <p>Your trusted renovation partner in transforming spaces.</p>
+            <div class="gallery">
+                <img src="image1.JPG" alt="Living Room Renovation">
+                <img src="image2.jpg" alt="Kitchen Renovation">
+                <img src="image3.jpg" alt="Bathroom Renovation">
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>AVK Renos is dedicated to providing exceptional renovation services tailored to your needs.</p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Explore our past renovation projects to see the quality and craftsmanship we deliver.</p>
+        </section>
+
+        <!-- Book a Consultation Section -->
+        <section id="book">
+            <h2>Book a Consultation</h2>
+            <p>Contact us to schedule a consultation and discuss your renovation plans.</p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@avkrenos.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+        </section>
     </div>
+
+    <!-- Footer Section -->
     <footer>
         &copy; 2025 AVK Renos. All rights reserved.
     </footer>
+    // Highlight Active Section in Menu
+document.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav.menu a");
+
+    let currentSection = "";
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 60;
+        if (window.scrollY >= sectionTop) {
+            currentSection = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${currentSection}`) {
+            link.classList.add("active");
+        }
+    });
+});
 </body>
 </html>
