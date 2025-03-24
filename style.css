@@ -1,5 +1,5 @@
 /* General Reset */
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -79,6 +79,7 @@ nav.menu a:hover {
     justify-content: center;
     flex-wrap: wrap; /* Allows images to wrap on smaller screens */
     gap: 15px; /* Space between images */
+    margin-top: 20px;
 }
 
 .gallery img {
@@ -153,6 +154,7 @@ footer {
 
     .gallery img {
         max-width: 100%;
+        height: auto; /* Ensures images fit their container */
     }
 
     header img {
