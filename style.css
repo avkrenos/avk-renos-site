@@ -40,7 +40,38 @@ header h1 {
     font-size: 24px;
     text-align: center;
 }
+/* Navigation Menu */
+nav.menu {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the menu items */
+    gap: 15px; /* Add spacing between the menu symbols */
+}
 
+nav.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Adjust symbol size */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav.menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Responsive Design for Very Small Screens */
+@media screen and (max-width: 480px) {
+    nav.menu {
+        justify-content: space-evenly; /* Distribute symbols evenly on smaller screens */
+    }
+
+    nav.menu a {
+        font-size: 18px; /* Reduce symbol size slightly */
+        padding: 5px;
+    }
+}
 .menu {
     display: flex;
     gap: 10px;
