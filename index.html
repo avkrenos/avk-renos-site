@@ -3,66 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVK Renos</title>
+    <meta name="description" content="AVK Renovation's - Your trusted partner for all your renovation needs, including painting, drywall, deck building, and more.">
+    <meta name="keywords" content="renovation, painting, drywall, carpentry, deck, power washing">
+    <meta name="author" content="AVK Renovation's">
     <link rel="stylesheet" href="style.css">
+    <title>AVK Renovation's</title>
+    <style>
+        body {
+            background-color: #f5f5dc; /* Beige background */
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #444; /* Adjusted for better contrast */
+            text-align: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 1.5em;
+            background-color: #eaeaea; /* Light gray */
+            border-bottom: 2px solid #bbb;
+            position: relative;
+        }
+
+        header img {
+            max-height: 80px;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 50%;
+            right: 1em;
+            transform: translateY(-50%);
+        }
+
+        .dropdown button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #eaeaea; /* Matching header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: #4caf50;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-bottom: 1px solid #bbb;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #dcdcdc;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        section h2 {
+            color: #4caf50;
+        }
+
+        footer {
+            background-color: #eaeaea; /* Matching header */
+            color: #555;
+            padding: 1em;
+            margin-top: 2em;
+            border-top: 2px solid #bbb;
+        }
+
+        footer a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .dropdown button {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            .dropdown-content a {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1em;
+            }
+
+            header img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            section {
+                padding: 1em;
+            }
+
+            footer {
+                padding: 0.5em;
+            }
+
+            .photo-gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            .services {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1em;
+            }
+
+            .service {
+                padding: 1em;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #fff;
+            }
+
+            .form-container {
+                width: 100%;
+                padding: 1em;
+            }
+
+            .form-container form {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="hero-banner">
-        <div class="overlay">
-            <h1 class="hero-title">AVK Renos</h1>
-            <p class="hero-subtitle">Transforming Spaces with Precision and Style</p>
-            <a href="#about" class="cta-button">Discover More</a>
+
+<header>
+    <img src="logo.png" alt="AVK Renovation's Logo">
+    <div class="dropdown">
+        <button>Menu</button>
+        <div class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#enquiry">Enquiry</a>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Navigation -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#book">Book</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<section id="home" class="home">
+    <h2>Welcome to AVK Renovation's</h2>
+    <p>Your trusted partner for all your renovation needs. From painting to carpentry, we transform your spaces with expert craftsmanship and care.</p>
+    <div class="photo-gallery">
+        <img src="image1.JPG" alt="Interior Painting Project" loading="lazy">
+        <img src="image2.jpg" alt="Deck Renovation Project" loading="lazy">
+        <img src="image3.jpg" alt="Drywall Installation" loading="lazy">
+    </div>
+</section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- About Us Section -->
-        <section id="about" class="section">
-            <h2>About AVK Renos</h2>
-            <p>At AVK Renos, we bring your vision to life through expert craftsmanship and innovative designs. Our team ensures every project is executed with precision and care.</p>
-        </section>
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Interior & Exterior Painting</h3>
+            <p>Enhance your home with professional painting services tailored to your style.</p>
+        </div>
+        <div class="service">
+            <h3>Drywall</h3>
+            <p>High-quality drywall installation and finishing for a flawless look.</p>
+        </div>
+        <div class="service">
+            <h3>Deck</h3>
+            <p>Custom deck building and repairs to extend your outdoor living space.</p>
+        </div>
+        <div class="service">
+            <h3>Power Washing</h3>
+            <p>Remove dirt and grime with our expert power washing services.</p>
+        </div>
+        <div class="service">
+            <h3>Carpentry</h3>
+            <p>Skilled carpentry for renovations, repairs, and custom projects.</p>
+        </div>
+        <div class="service">
+            <h3>Stucco</h3>
+            <p>Top-quality stucco application to enhance the exterior presence.</p>
+        </div>
+    </div>
+</section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="section">
-            <h2>Our Portfolio</h2>
-            <div class="portfolio-gallery">
-                <img src="image1.JPG" alt="Project 1">
-                <img src="image2.jpg" alt="Project 2">
-                <img src="image3.jpg" alt="Project 3">
-            </div>
-        </section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:647-785-0375">647-785-0375</a></p>
+    <p>Email: <a href="mailto:clients@avkrenos.com">clients@avkrenos.com</a></p>
+</section>
 
-        <!-- Book Section -->
-        <section id="book" class="section">
-            <h2>Book a Consultation</h2>
-            <p>Let’s discuss your project. Book a consultation to get started today.</p>
-            <a href="#contact" class="cta-button">Contact Us</a>
-        </section>
+<section id="enquiry">
+    <h2>Get a Quote</h2>
+    <div class="form-container">
+        <form action="https://formspree.io/f/mwplpkko" method="post" onsubmit="showThankYou(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2>Contact Us</h2>
-            <p>Email: info@avkrenos.com</p>
-            <p>Phone: +1 (555) 123-4567</p>
-        </section>
-    </main>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 AVK Renos. Designed with passion.</p>
-    </footer>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+            <label for="services">Services Required:</label>
+            <select id="services" name="services[]" multiple required>
+                <option value="painting">Interior & Exterior Painting</option>
+                <option value="drywall">Drywall</option>
+                <option value="deck">Deck</option>
+                <option value="power_washing">Power Washing</option>
+                <option value="carpentry">Carpentry</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="thank-you" id="thank-you">
+            <h2>Thank you for reaching out! We will get back to you shortly!</h2>
+            <p><a href="#home">Return to Home</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 AVK Renovation's. All rights reserved.</p>
+    <p>Follow us on 
+        <a href="#">Facebook</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">Twitter</a>
+    </p>
+</footer>
+
+<script>
+    function showThankYou(event) {
+        event.preventDefault();
+        document.querySelector('.form-container form').style.display = 'none';
+        document.querySelector('#thank-you').style.display = 'block';
+    }
+</script>
+
 </body>
 </html>
