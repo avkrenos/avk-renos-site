@@ -244,16 +244,15 @@
     <p>Phone: <a href="tel:647-785-0375">647-785-0375</a></p>
     <p>Email: <a href="mailto:clients@avkrenos.com">clients@avkrenos.com</a></p>
 </section>
-
 <section id="enquiry">
     <h2>Get a Quote</h2>
     <div class="form-container">
-        <form action="https://formspree.io/f/mwplpkko" method="post" onsubmit="showThankYou(event)">
+        <form id="enquiryForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
             <label for="address">Address:</label>
             <input type="text" id="address" name="address" placeholder="Enter your address" required>
@@ -272,10 +271,29 @@
 
             <button type="submit">Submit</button>
         </form>
+        <div id="thankYouMessage" style="display: none; text-align: center; margin-top: 20px;">
+            <h3>Thank you for reaching out! We will get back to you shortly!</h3>
         </div>
     </div>
 </section>
 
+<script>
+    document.getElementById('enquiryForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Display the thank-you message
+        document.getElementById('thankYouMessage').style.display = 'block';
+
+        // Clear the form fields
+        event.target.reset();
+
+        // Automatically navigate to the home section after a delay
+        setTimeout(function () {
+            document.getElementById('thankYouMessage').style.display = 'none';
+            window.location.hash = '#home'; // Navigate to the home section
+        }, 3000); // Adjust delay time as needed
+    });
+</script>
 <footer>
     <p>&copy; 2025 AVK Renovation's. All rights reserved.</p>
 </footer>
