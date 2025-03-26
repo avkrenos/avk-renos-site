@@ -80,6 +80,47 @@
         section h2 {
             color: #4caf50;
         }
+        /* Enhanced styles for the Services Section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service {
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+    color: #4caf50;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.service p {
+    font-size: 1em;
+    color: #555;
+}
+
+.service:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for alternating services */
+}
+
+.service:nth-child(odd) {
+    background-color: #e8f5e9; /* Light green for alternating services */
+}
+
 
         footer {
             background-color: #eaeaea; /* Matching header */
